@@ -1,0 +1,210 @@
+.header 
+{
+    display: flex;
+    justify-content: space-around;
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    max-height: auto;
+    border-bottom: 2px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logo-menu .phone {
+    display: none;
+}
+
+.header img 
+{
+    height: 5rem;
+}
+
+.search-bar 
+{
+    margin-top: 0.8rem;
+    border-radius: 4px;
+}
+
+.search-bar input
+{
+    border: 2px solid #4A90E2;
+    border-left: none;
+    border-top: none;
+}
+
+.search-bar ul 
+{
+    position: absolute;
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 2px solid #4A90E2;
+    background-color: #384050 ;
+    max-height: 9rem;
+    overflow-y: auto;
+    width: 21rem;
+    z-index: 1000;
+}
+
+.search-bar:focus-within ul 
+{
+    display: block;
+}
+
+.search-bar li 
+{
+    padding: 8px 0;
+    color: white;
+}
+
+.search-bar li:hover 
+{
+    background-color: #2e3646;;
+    cursor: pointer;
+}
+
+.h-menu 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.h-menu a 
+{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.links 
+{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.links a 
+{
+    background-color: #4A90E2;
+    padding: 0.3rem 1.8rem;
+    border-radius: 30px;
+    color: white;
+}
+
+.links a:hover 
+{
+    background-color: #357ABD;
+}
+
+.burger-btn 
+{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.burger-btn img 
+{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .header {
+        flex-direction: row;
+        padding: 1rem;
+    }
+
+    .header .h-menu {
+        z-index: 9999;
+    }
+
+    .header img {
+        height: 3rem;
+    }
+
+    .search-bar {
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+        width: 100%;
+        top: 6rem;
+        left: 0;
+        position: absolute;
+        background-color: white;
+    }
+
+    .search-bar, .links{
+        display: none;
+    }
+
+    .search-bar.active {
+        display: flex;
+    }
+
+    .search-bar input {
+        width: 90%;
+        border: 2px solid #4A90E2;
+        border-left: none;
+        border-top: none;
+    }
+
+    .search-bar ul {
+        width: 90%;
+        top: 2.2rem;
+    }
+
+    .links{
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 1);
+        justify-content: center;
+        position: absolute;
+        top: 5rem;
+        right: 0;
+        width: 100%;
+        padding: 2rem 0;
+        z-index: 1002;
+    }
+
+    .links a {
+        padding: 0;
+        background-color: transparent;
+        font-size: 1rem;
+        color: black;
+    }
+
+    .links a:hover {
+        background-color: transparent;
+    }
+
+    .links.active {
+        display: flex;
+    }
+
+    .logo-menu {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .logo-menu .burger {
+        display: flex;
+        height: 2rem;
+        cursor: pointer;
+    }
+
+    .burger-btn {
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .burger-btn img {
+        display: block;
+        height: 2rem;
+    }
+}
