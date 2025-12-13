@@ -1,0 +1,181 @@
+/* Ranking */
+
+.rank {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 5rem;
+}
+
+.rank .card {
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    border-radius: 10px;
+    will-change: transform;
+    backface-visibility: hidden;
+}
+
+.rank .card:hover {
+    transform: translateY(-14px);
+    transition: transform 0.18s ease-out;
+}
+
+.rank img {
+    width: 15rem;
+    height: auto;
+}
+
+.rank h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.rank .card.first {
+    background-color: #4169E1;
+}
+
+.rank .card.second {
+    background-color: #2b2b2b;
+}
+
+.rank .card.third {
+    background-color: #3b3b3b;
+}
+
+.rank .card.first h2 {
+    color: gold;
+    padding: 0.7rem 0.3rem;
+    border-radius: 10px;
+}
+
+.rank .card.second h2 {
+    color: #C0C0C0;
+    padding: 0.7rem 0.3rem;
+    border-radius: 10px;
+}
+
+.rank .card.third h2 {
+    color: #cd7f32;
+    padding: 0.7rem 0.3rem;
+    border-radius: 10px;
+}
+
+.rank a  {
+    text-decoration: none;
+}
+
+
+/* Explain */
+
+.explain {
+    margin: 5rem 10rem;
+    padding: 0.5rem 1.4rem;
+    border-radius: 15px;
+    box-shadow: 5px 10px 75px rgba(0, 0, 0, 0.5);
+}
+
+.explain h1 {
+    text-align: left;
+    padding: .3rem 1.5rem;
+    background-color: #384050;
+    font-size: 2.2rem;
+    border-radius: 10px 10px;
+    color: white;
+}
+
+.explain ul {
+    margin-top: 2rem;
+    list-style-type: none;
+    padding-left: 2rem;
+}
+
+.explain ul li h3 {
+    background-color: #00497c;
+    padding: .3rem 1rem;
+    font-size: 1.7rem;
+    margin-top: 1.5rem;
+    border-radius: 8px;
+    color: white;
+}
+
+.explain img {
+    margin: 0 auto 2rem auto;
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.answer {
+    margin-top: 2rem;
+    padding: 1.3rem 1rem;
+    border-radius: 8px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    background-color: #f1f8fc ;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .rank {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .rank .card {
+        width:50%;
+        margin: auto;
+    }
+
+    .rank img {
+        width: 100%;
+    }
+
+    .rank h2 {
+        font-size: 1.6rem;
+    }
+
+    .rank .card.first h2 {
+        font-size: 1.5rem;
+        padding: 0.5rem 0.2rem;
+    }
+
+    .rank .card.second h2 {
+        font-size: 1.5rem;
+        padding: 0.5rem 0.2rem;
+    }
+
+    .rank .card.third h2 {
+        font-size: 1.5rem;
+        padding: 0.5rem 0.2rem;
+    }
+
+    .explain {
+        margin: 2rem 1rem;
+    }
+
+    .explain h1 {
+        font-size: 1.5rem;
+        padding: .2rem 1rem;
+    }
+
+    .explain ul li h3 {
+        font-size: 1.2rem;
+        padding: .2rem .5rem;
+    }
+
+    .explain ul {
+        padding-left: 0;
+    }
+
+    .explain img {
+        margin: 0 auto 1rem auto;
+        width: 100%;
+    }
+    
+}

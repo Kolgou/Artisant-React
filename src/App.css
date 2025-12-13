@@ -1,0 +1,15 @@
+@font-face {
+    font-family: Graphik;
+    src: url(../src/font/Graphik_Collection/Graphik\ Family/);
+}
+
+.App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Graphik, sans-serif;
+}
+
+.content {
+    flex: 1;
+}
