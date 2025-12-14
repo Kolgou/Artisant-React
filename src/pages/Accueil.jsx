@@ -49,7 +49,7 @@ function Accueil(){
         <ul>
           <li><h3>Choisir la catégorie d’artisanat dans le menu</h3></li>
           <img src={chooseMenu} alt="Choisir la catégorie d’artisanat dans le menu" />
-          <li><h3>Choisir un artisan.</h3></li>
+          <li><h3>Choisir un artisan</h3></li>
           <img src={chooseArtisan} alt="Choisir un artisan" />
           <li><h3>Le contacter via le formulaire de contact</h3></li>
           <img src={sendMessage} alt="Le contacter via le formulaire de contact" />
